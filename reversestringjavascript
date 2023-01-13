@@ -1,0 +1,16 @@
+function reverse(str){
+    const backwards = [];
+    
+    //str.length-1 ---> starts for last index
+    // i >= 0 ---> idnex values must be greater than 0
+    // i-- ---> go in reverse order
+    
+    for(let i=str.length-1; i >= 0; i--){
+        backwards.push(str[i])
+    }
+    console.log(backwards)
+    return backwards.join(''); /// ---> convert 'abc' ---->  [ 'c', 'b', 'a' ]
+}
+
+
+reverse('abc')
